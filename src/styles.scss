@@ -1,0 +1,137 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+  }
+
+  .container {
+    position: relative;
+    height: 300px;
+  }
+  
+  .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    background: $white;
+    color: $navBackground;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .hide {
+    color: black;
+  }
+  
+  h2, h3 {
+    color: $white;
+  }
+  
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  
+  .header {
+    margin: 0;
+    font-size: 1.45em;
+  }
+  
+  
+  .header a {
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+  }
+  
+  .main-nav {
+    margin-top: 5px;
+      a {
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    color: $white;
+    font-size: 1em;
+    &:hover {
+      color: $hoverYellow;
+      text-decoration: underline;
+    }
+    &.active{
+        color: $hoverYellow;
+        text-decoration: underline;
+    }
+  }
+}
+  
+
+  
+  .navigation {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #a2a2a2;
+    background-color: #2B386F;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  input[type=text] {
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    &:focus {
+      border-color: #333;
+    }
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: $white;
+    padding: 12px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 300px;
+  }
+  
+  .logo img {
+    position: relative;
+    width: 200px;
+  }
+
+  @media (min-width: 769px) {
+    .navigation, .main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right:20px;
+    }
+  }
+  @media (max-width: 769px) {
+    li+li{
+        border-top: 1px solid $white;
+    }
+  }
