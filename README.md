@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+# Description
+
+Responsive navigation bar with given CSS specs. Single page app with Routing to all pages. 
+Log in and Log out toggles and redirect to different pages.Hosted on AWS S3.
+404 page not found page appears in case of invalid URL. But you won't see that on the hosted link I provided. Because AWS suppress it with their own 404 page. 
+Common SASS file along with one partial (_variables.scss) for demonstration. 
+Designed CSS from scratch, didn't use any library. 
+Links holds active state with different CSS color and underline. 
+Used media query for different views on mobile and desktop.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
